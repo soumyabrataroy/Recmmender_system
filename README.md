@@ -1,6 +1,6 @@
 # Recommender_system
 
-This Python code implements a customer-item based collaborative filtering recommendation system for an e-commerce website. It uses data from a CSV file containing customer IDs, product IDs (StockCode), and quantities purchased (Quantity).
+This Python code implements a customer user based and item based collaborative filtering recommendation system for an e-commerce website. It uses data from a CSV file containing customer IDs, product IDs (StockCode), and quantities purchased (Quantity).
 
 1. **Data Loading and Cleaning**:
 
@@ -30,11 +30,5 @@ This Python code implements a customer-item based collaborative filtering recomm
 
 - The code also constructs an item-item similarity matrix using the `cosine_similarity` function. This matrix has product IDs as both the index and columns.
 - A function `get_top_similar_items` is defined to return the top 10 most similar products for a given product ID.
-
-6. **Combining User and Item-Based Recommendations**:
-
-- The code suggests two options for combining user-based and item-based recommendations.
-- One option is to recommend products based on user similarity and then filter these recommendations based on the similarity of the recommended products to products already purchased by the user.
-- Another option is to recommend products that the user's most similar customer has purchased but the user has not.
 
 Overall, this code demonstrates how to build a basic collaborative filtering recommendation system using Python and scikit-learn. The system can be further improved by incorporating additional data, such as product ratings or reviews, and by using more sophisticated recommendation algorithms.
